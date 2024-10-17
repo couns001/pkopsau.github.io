@@ -39,10 +39,10 @@
   margin: auto;
 }
 .logosvg{
-  width: min(1000px, 90%);
+  width: min(600px, 90%);
   margin: auto;
   display: block;
-  border-image: conic-gradient(from var(--angle),#780000,#FDF0D5,#003049);
+  border-image: conic-gradient(from var(--angle),#780000,#FDF0D5,#003049) 1;
   animation: 1s spin linear infinite;
 }
 @keyframes spin{
@@ -56,8 +56,15 @@
 .gallerie{
   width: min(1000px, 90%);
   margin: auto;
-  columns: 5;
+  columns: 5 250px;
+  column-gap: 1em;
+ img{
+  display:block;
+  margin-bottom: 2em;
+  width:100%;
 }
+}
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -341,29 +348,3 @@ hr {
   content: "";
   display: table;
   clear: both; }
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
