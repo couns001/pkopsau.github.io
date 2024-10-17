@@ -39,7 +39,7 @@
   margin: auto;
 }
 .logosvg{
-  width: min(1000px, 90%);
+  width: min(800px, 90%);
   margin: auto;
   display: block;
   border-image: conic-gradient(from var(--angle),#780000,#FDF0D5,#003049) 1;
