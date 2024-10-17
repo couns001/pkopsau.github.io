@@ -42,7 +42,7 @@
   width: min(1000px, 90%);
   margin: auto;
   display: block;
-  border-image: conic-gradient(from var(--angle),#780000,#FDF0D5,#003049);
+  border-image: conic-gradient(from var(--angle),#780000,#FDF0D5,#003049) 1;
   animation: 1s spin linear infinite;
 }
 @keyframes spin{
@@ -56,8 +56,15 @@
 .gallerie{
   width: min(1000px, 90%);
   margin: auto;
-  columns: 5;
+  columns: 5 250px;
+  column-gap: 1em;
+ img{
+  display:block;
+  margin-bottom: 1em;
+  width:100%;
 }
+}
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
